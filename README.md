@@ -10,17 +10,15 @@
   - ### grid template areas
   - ### justify content
   - ### media queries 
-  - ### git hub pages
   - ### postion relative, absolute, fixed 
   - ### z index
   - ### box sizing
   - ### flex box
   - ### css grid
-  - ### 
-  - ###
-  - ###
-  - ###
-  - ###
-  - ###
+  - ### javscript
+  - ### keyframes
+  - ### animations
+  - ### position fixed, absolute, relative
+  - ### git hub pages
 
 [Back to Top](#custom_anchor_name)
