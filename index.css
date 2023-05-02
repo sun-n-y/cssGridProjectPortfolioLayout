@@ -125,7 +125,9 @@ body {
   align-items: center;
 }
 
-.navbar .bar {
+.navbar .bar1,
+.bar2,
+.bar3 {
   background-color: black;
   height: 4px;
   width: 36px;
@@ -223,12 +225,16 @@ body {
     transform: rotate(-45deg) translate(4px, -10px);
   }
 }
-.hamburger .bar:nth-child(1) {
-  animation: flipbar1 1s infinite;
+
+.animatebar1 {
+  animation: flipbar1 1s;
+  animation-fill-mode: forwards;
 }
-.hamburger .bar:nth-child(2) {
-  animation: fadebar2 1s infinite;
+.animatebar2 {
+  animation: fadebar2 1s;
+  animation-fill-mode: forwards;
 }
-.hamburger .bar:nth-child(3) {
-  animation: flipbar3 1s infinite;
+.animatebar3 {
+  animation: flipbar3 1s;
+  animation-fill-mode: forwards;
 }
