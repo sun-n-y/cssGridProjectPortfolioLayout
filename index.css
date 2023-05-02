@@ -94,6 +94,53 @@ body {
   padding: 64px;
 }
 
+.navbar .right img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.navbar .left {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+
+.navbar .right {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .bar {
+  background-color: black;
+  height: 4px;
+  width: 36px;
+  margin: 3px;
+  border-radius: 10px;
+}
+.navbar .hamburger {
+  display: none;
+}
+
+.hambuger {
+  height: 50px;
+  width: 50px;
+}
+
 @media screen and (max-width: 1100px) {
   .project-grid {
     grid-template-areas:
@@ -124,39 +171,28 @@ body {
       "dimensional dimensional";
     gap: 0;
     row-gap: 16px;
+    margin-top: 100px;
   }
   .project .overlay {
     font-size: 24px;
   }
-}
+  .navbar .right {
+    display: none;
+  }
 
-.navbar .right img {
-  width: 24px;
-  height: 24px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 64px 0;
-}
-
-.navbar .left {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.navbar .right a {
-  text-decoration: none;
-  color: black;
-}
-.navbar .right a:hover {
-  text-decoration: underline;
-}
-
-.navbar .right {
-  width: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navbar {
+    padding: 16px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
