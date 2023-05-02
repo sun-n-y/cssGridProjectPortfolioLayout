@@ -238,3 +238,32 @@ body {
   animation: flipbar3 1s;
   animation-fill-mode: forwards;
 }
+
+.mobile-nav {
+  width: 80px;
+  background: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  padding: 16px;
+}
+
+.mobile-nav img {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  color: black;
+  margin: 16px 0;
+}
+.mobile-nav a:hover {
+  text-decoration: underline;
+}
