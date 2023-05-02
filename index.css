@@ -227,19 +227,19 @@ body {
 }
 
 .animatebar1 {
-  animation: flipbar1 1s;
+  animation: flipbar1 0.5s;
   animation-fill-mode: forwards;
 }
 .animatebar2 {
-  animation: fadebar2 1s;
+  animation: fadebar2 0.5s;
   animation-fill-mode: forwards;
 }
 .animatebar3 {
-  animation: flipbar3 1s;
+  animation: flipbar3 0.5s;
   animation-fill-mode: forwards;
 }
 
-.mobile-nav {
+.mobileNav {
   width: 80px;
   background: white;
   height: 100vh;
@@ -252,18 +252,28 @@ body {
   top: 0;
   right: 0;
   padding: 16px;
+  transform: translateX(100%);
+  transition: all 0.3s;
 }
 
-.mobile-nav img {
+.mobileNav img {
   width: 24px;
   height: 24px;
 }
 
-.mobile-nav a {
+.mobileNav a {
   text-decoration: none;
   color: black;
   margin: 16px 0;
 }
-.mobile-nav a:hover {
+.mobileNav a:hover {
   text-decoration: underline;
+}
+
+.openDrawer {
+  transform: translateX(0);
+}
+
+.navbar .hamburger:hover {
+  cursor: pointer;
 }
