@@ -196,3 +196,39 @@ body {
     box-sizing: border-box;
   }
 }
+
+@keyframes fadebar2 {
+  from {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes flipbar1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+@keyframes flipbar3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
+  }
+}
+.hamburger .bar:nth-child(1) {
+  animation: flipbar1 1s infinite;
+}
+.hamburger .bar:nth-child(2) {
+  animation: fadebar2 1s infinite;
+}
+.hamburger .bar:nth-child(3) {
+  animation: flipbar3 1s infinite;
+}
