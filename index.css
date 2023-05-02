@@ -116,3 +116,34 @@ body {
     font-size: 24px;
   }
 }
+
+.navbar .right img {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+
+.navbar .left {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .right a:hover {
+  text-decoration: underline;
+}
+
+.navbar .right {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
